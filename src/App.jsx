@@ -7,7 +7,8 @@ import './components/Navbar'
 // import './App.css'
 import './index.css'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
+import HeroSection from './components/Hero'
+import Card from './components/Card'
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 
       <Navbar />
       <HeroSection />
+      <Card />
     </>
   )
 }

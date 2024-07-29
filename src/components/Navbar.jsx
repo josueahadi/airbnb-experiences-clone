@@ -1,5 +1,4 @@
 import airbnbLogo from '../assets/airbnb-logo.png'
-import experiencesGrid from '../assets/photo-grid.png'
 
 export default function Header() {
     return (
