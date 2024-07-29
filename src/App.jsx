@@ -3,10 +3,11 @@
 // import viteLogo from '/vite.svg'
 // import airbnbLogo from './assets/airbnb-logo.png'
 // import React from 'react'
-import './components/Header'
+import './components/Navbar'
 // import './App.css'
 import './index.css'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
 
-      <Header />
+      <Navbar />
+      <HeroSection />
     </>
   )
 }
