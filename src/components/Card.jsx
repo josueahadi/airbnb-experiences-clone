@@ -9,7 +9,7 @@ export default function Card(props) {
           Sold Out
         </span>
       )}
-      <div className="flex items-center text-base md:text-lg mt-2">
+      <div className="flex items-center space-x-1 text-base md:text-lg mt-2">
         <img src={StarIcon} className="w-4 md:w-6" alt="Star Icon" />
         <span>{props.rating}</span>
         <span className="text-[#918E9B]">({props.reviewCount})</span>

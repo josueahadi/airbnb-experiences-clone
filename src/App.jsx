@@ -2,8 +2,6 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/Hero";
 import Card from "./components/Card";
-
-// Import images
 import KatieZaferesImage from "./assets/katie-zaferes.png";
 
 const cardsInfo = [
@@ -41,10 +39,10 @@ const cardsInfo = [
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <HeroSection />
-      <section className="flex flex-row pt-16 px-6 sm:px-10 md:px-20">
+      <section className="flex flex-row gap-6 py-16 px-6 sm:px-10 md:px-20">
         {cardsInfo.map((card) => (
           <Card
             key={card.id}
@@ -58,7 +56,7 @@ function App() {
           />
         ))}
       </section>
-    </>
+    </div>
   );
 }
 
