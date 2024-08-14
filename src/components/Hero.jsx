@@ -1,4 +1,4 @@
-import experiencesGrid from "../assets/photo-grid.png";
+import experiencesGrid from "/photo-grid.png";
 
 export default function Hero() {
   return (

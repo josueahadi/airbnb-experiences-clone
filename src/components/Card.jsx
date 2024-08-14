@@ -1,4 +1,4 @@
-import StarIcon from "../assets/star.png";
+import StarIcon from "/star.png";
 
 export default function Card(props) {
   return (

@@ -2,40 +2,22 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/Hero";
 import Card from "./components/Card";
-import KatieZaferesImage from "./assets/katie-zaferes.png";
+import data from "./data";
 
-const cardsInfo = [
-  {
-    id: 1, // Unique identifier
-    img: KatieZaferesImage,
-    rating: 5.0,
-    reviewCount: 6,
-    country: "USA",
-    title: "Life Lessons with Katie Zaferes",
-    price: 136,
-    isSoldOut: true,
-  },
-  {
-    id: 2, // Unique identifier
-    img: KatieZaferesImage,
-    rating: 4.9,
-    reviewCount: 5,
-    country: "Canada",
-    title: "Learn Cooking with John Doe",
-    price: 120,
-    isSoldOut: false,
-  },
-  {
-    id: 3, // Unique identifier
-    img: KatieZaferesImage,
-    rating: 4.8,
-    reviewCount: 12,
-    country: "UK",
-    title: "Master Photography with Jane Doe",
-    price: 150,
-    isSoldOut: false,
-  },
-];
+const cards = data.map((card) => {
+  return (
+    <Card
+      key={card.id}
+      img={card.coverImg}
+      rating={card.stats.rating}
+      reviewCount={card.stats.reviewCount}
+      location={card.location}
+      title={card.title}
+      price={card.price}
+      isSoldOut={card.isSoldOut}
+    />
+  );
+});
 
 function App() {
   return (
@@ -43,18 +25,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <section className="flex flex-row gap-6 py-16 px-6 sm:px-10 md:px-20">
-        {cardsInfo.map((card) => (
-          <Card
-            key={card.id}
-            img={card.img}
-            rating={card.rating}
-            reviewCount={card.reviewCount}
-            country={card.country}
-            title={card.title}
-            price={card.price}
-            isSoldOut={card.isSoldOut}
-          />
-        ))}
+        {cards}
       </section>
     </div>
   );
