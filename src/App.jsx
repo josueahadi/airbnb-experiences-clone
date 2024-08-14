@@ -24,7 +24,7 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
-      <section className="flex flex-row gap-6 py-16 px-6 sm:px-10 md:px-20">
+      <section className="flex flex-nowrap flex-row overflow-x-auto gap-5 py-16 px-6 sm:px-10 md:px-20">
         {cards}
       </section>
     </div>

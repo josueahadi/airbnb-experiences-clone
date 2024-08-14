@@ -2,7 +2,7 @@ import StarIcon from "/star.png";
 
 export default function Card(props) {
   return (
-    <div className="relative w-44 md:w-60">
+    <div className="flex flex-none flex-col relative w-44 md:w-60">
       <img src={props.img} className="w-full rounded-xl" alt={props.title} />
       {props.isSoldOut && (
         <span className="uppercase text-[#222222] bg-[#FFFFFF] rounded-md px-2 py-1 absolute top-3 left-3">
