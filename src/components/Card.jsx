@@ -13,7 +13,7 @@ export default function Card(props) {
         <img src={StarIcon} className="w-4 md:w-6" alt="Star Icon" />
         <span>{props.rating}</span>
         <span className="text-[#918E9B]">({props.reviewCount})</span>
-        <span className="text-[#918E9B]">&#8226; {props.country}</span>
+        <span className="text-[#918E9B]">&#8226; {props.location}</span>
       </div>
       <h2 className="mt-2">{props.title}</h2>
       <p className="mt-2">
