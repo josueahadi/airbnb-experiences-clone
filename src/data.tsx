@@ -12,7 +12,6 @@ export default [
     },
     location: "USA",
     openSpots: 0,
-    isSoldOut: true,
   },
   {
     id: 2,
@@ -25,9 +24,8 @@ export default [
       rating: 5.0,
       reviewCount: 30,
     },
-    location: "Paris",
+    location: "Online",
     openSpots: 27,
-    isSoldOut: false,
   },
   {
     id: 3,
@@ -42,7 +40,6 @@ export default [
     },
     location: "Norway",
     openSpots: 3,
-    isSoldOut: false,
   },
   {
     id: 1,
@@ -57,7 +54,6 @@ export default [
     },
     location: "USA",
     openSpots: 0,
-    isSoldOut: true,
   },
   {
     id: 2,
@@ -72,7 +68,6 @@ export default [
     },
     location: "France",
     openSpots: 27,
-    isSoldOut: false,
   },
   {
     id: 3,
@@ -87,7 +82,6 @@ export default [
     },
     location: "Norway",
     openSpots: 3,
-    isSoldOut: false,
   },
   {
     id: 1,
@@ -102,7 +96,6 @@ export default [
     },
     location: "USA",
     openSpots: 0,
-    isSoldOut: true,
   },
   {
     id: 2,
@@ -115,9 +108,8 @@ export default [
       rating: 5.0,
       reviewCount: 30,
     },
-    location: "France",
+    location: "Online",
     openSpots: 27,
-    isSoldOut: false,
   },
   {
     id: 3,
@@ -132,6 +124,5 @@ export default [
     },
     location: "Norway",
     openSpots: 3,
-    isSoldOut: false,
   },
 ];

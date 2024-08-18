@@ -1,12 +1,18 @@
 import StarIcon from "/star.png";
 
 export default function Card(props) {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
     <div className="flex flex-none flex-col relative w-44 md:w-60">
       <img src={props.img} className="w-full rounded-xl" alt={props.title} />
-      {props.isSoldOut && (
+      {badgeText && (
         <span className="uppercase text-[#222222] bg-[#FFFFFF] rounded-md px-2 py-1 absolute top-3 left-3">
-          Sold Out
+          {badgeText}
         </span>
       )}
       <div className="flex items-center space-x-1 text-base md:text-lg mt-2">
